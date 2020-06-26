@@ -89,7 +89,7 @@ def get_cookie():
                 random.randint(0, len(ip_list) - 1)])
         if cookie_req.status_code != 302:
             break
-        a += a
+        a += 1
         # 重试次数过多重新获取IP
         if a == 10:
             ip_list.clear()
@@ -110,7 +110,7 @@ def get_shangjia(shangjia):
         'Accept-Language': 'zh-CN,zh;q=0.9',
         'Connection': 'keep-alive',
         'Cookie': cookie_str,
-        'Host': 'fs.meituan.com',
+        'Host': 'gz.meituan.com',
         'Upgrade-Insecure-Requests': '1',
     }
     url = "https://gz.meituan.com/s/{0}/".format(shangjia)
