@@ -1,0 +1,4 @@
+*.html linguist-language=python
+*.tex linguist-language=python
+*.text linguist-language=python
+*.xml linguist-language=python
